@@ -1,13 +1,12 @@
 .navbar-toggler:focus {
   box-shadow: none;
 }
-
 .dwnld:hover {
   text-decoration: none;
 }
 .bi-star-fill,
 .bi-star-half {
-  color: #f7de45;
+  color: #212529;
 }
 .feature-icon-small {
   width: 3rem;
@@ -15,7 +14,7 @@
 }
 .callout-info {
   border: 1px solid #e9ecef;
-  border-left: 5px solid #f7de45;
+  border-left: 5px solid #212529;
 }
 .about {
   max-width: 768px;
