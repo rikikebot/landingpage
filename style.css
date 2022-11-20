@@ -15,6 +15,7 @@
 .callout-info {
   border: 1px solid #e9ecef;
   border-left: 5px solid #212529;
+  background-color: #f8f9fa;
 }
 .about {
   max-width: 768px;
