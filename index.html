@@ -3,87 +3,353 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tumitra | General Supplier & Printing</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <title>Bootstrap demo</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- header -->
-    <div class="container py-3">
-      <header class="d-flex flex-wrap justify-content-center">
-        <a
-          href="#"
-          class="d-flex align-items-center mb-2 mb-md-0 me-md-auto text-dark text-decoration-none"
-        >
-          <span class="fs-5 fw-semibold">https://tumitra.com/</span>
-        </a>
-
-        <ul class="nav nav-pills pt-2">
-          <li class="nav-itemp">
-            <a href="#" class="nav-link active bg-dark" aria-current="page"
-              >Home</a
+    <!-- navbar -->
+    <nav class="navbar bg-body sticky-top border-bottom">
+      <div class="container">
+        <ul class="nav">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link link-dark fs-5 fw-semibold dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-expanded="false"
+              >Tumitra</a
             >
-          </li>
-          <li class="nav-itemp">
-            <a href="#features" class="nav-link link-secondary">Features</a>
-          </li>
-          <li class="nav-itemp">
-            <a href="#faqs" class="nav-link link-secondary">FAQs</a>
-          </li>
-          <li class="nav-itemp">
-            <a href="#contact" class="nav-link link-secondary">Contact</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#faq">FAQs</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#contact">Contact</a></li>
+            </ul>
           </li>
         </ul>
-      </header>
-    </div>
+        <ul class="nav">
+          <li class="nav-item">
+            <a
+              class="nav-link fs-5"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Hubungi Kami"
+              href="#"
+              ><i class="bi bi-telephone-inbound"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link fs-5"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Kirim Email"
+              href="#"
+              ><i class="bi bi-envelope-at"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- hero -->
     <div class="container">
-      <div class="px-4 pt-3 text-center">
-        <img src="img/box.png" alt="box" />
-        <h1 class="display-3 fw-bold">Hello, Mitra!</h1>
-        <div class="col-lg-10 mx-auto">
-          <p class="lead fs-4 lh-sm">
+      <div class="row flex-lg-row-reverse align-items-center mb-3">
+        <div class="col-md-7">
+          <img
+            src="img/Delivery_address.png"
+            class="img-fluid"
+            title="Gratis Ongkir"
+            alt="gratis ongkir"
+          />
+        </div>
+        <div class="col-md-5">
+          <p class="fs-5 fw-semibold lh-1 mb-1">Hello Mitra!</p>
+          <h1 class="display-2 fw-bold lh-1 mb-3">Free Delivery</h1>
+          <p class="lh-1 lead">
+            <span class="badge text-bg-primary">#KhususBatam</span>
+            Tanpa Minimal Belanja.
+          </p>
+          <p class="text-muted">
             Dapatkan berbagai macam kebutuhan perlengkapan kantor yang langsung
             Kami kirim dan Anda terima di depan pintu tanpa ongkos kirim.
-            <span class="fw-semibold fs-5">#KhususBatam</span>
           </p>
-          <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-            <a
-              class="btn btn-dark btn-lg px-4 gap-3"
-              href="https://api.whatsapp.com/send?phone=+62811693570&text=Hai! Tumitra.. "
-              target="_blank"
-              role="button"
-              >Hubungi Kami</a
-            >
-            <a
-              class="btn btn-outline-dark btn-lg px-4"
-              href="mailto:tumitra.tps@gmail.com"
-              target="_blank"
-              role="button"
-              >Kirim Email</a
-            >
-          </div>
-        </div>
-        <div class="d-flex justify-content-center py-4">
-          <p class="mx-2">Download <i class="bi bi-download"></i></p>
-          <span class="px-1">.</span>
-          <a href="" class="dwnld link-dark mx-2">Katalog Produk</a>
         </div>
       </div>
     </div>
 
+    <!-- about us -->
     <div class="container">
+      <div class="row align-items-center mb-3">
+        <div class="col-md-7">
+          <img
+            src="img/Add_information.png"
+            class="img-fluid"
+            title="Tentang Tumitra"
+            alt="tentang tumitra"
+          />
+        </div>
+        <div class="col-md-5">
+          <p class="fs-5 fw-semibold lh-1 mb-1">About Us</p>
+          <h1 class="display-2 fw-bold lh-1 mb-3">
+            Office <span class="h1 fst-italic">Supplies</span>
+          </h1>
+          <p class="text-muted">
+            Kami Menyediakan berbagai macam produk-produk berkualitas untuk
+            keperluan operasional kantor Anda.
+          </p>
+          <img
+            src="img/verified.png"
+            class="mb-5 float-end"
+            alt="jaminan tumitra"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- features -->
+    <div class="container">
+      <div class="row flex-lg-row-reverse align-items-center mb-3">
+        <div class="col-md-6">
+          <img
+            src="img/Checking_boxes.png"
+            class="img-fluid"
+            title="Barang & Jasa"
+            alt="barang dan jasa"
+          />
+        </div>
+        <div class="col-md-6">
+          <p class="fs-5 fw-semibold mb-3">Our Products</p>
+          <div class="row row-cols-1 row-cols-sm-2 g-4">
+            <div class="d-flex flex-column gap-2">
+              <div
+                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+              >
+                <i class="bi bi-pencil-square"></i>
+              </div>
+              <h4 class="fw-semibold mb-0">Alat Tulis</h4>
+              <p class="text-muted">
+                Menyediakan berbagai macam perlengkapan Alat Tulis Kantor.
+              </p>
+            </div>
+
+            <div class="d-flex flex-column gap-2">
+              <div
+                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+              >
+                <i class="bi bi-printer"></i>
+              </div>
+              <h4 class="fw-semibold mb-0">Percetakan</h4>
+              <p class="text-muted">
+                Menyediakan produk cetak digital ataupun offset untuk usaha
+                anda.
+              </p>
+            </div>
+
+            <div class="d-flex flex-column gap-2">
+              <div
+                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+              >
+                <i class="bi bi-stars"></i>
+              </div>
+              <h4 class="fw-semibold mb-0">Kebersihan</h4>
+              <p class="text-muted">
+                Menyediakan peralatan kebersihan & Pengharum ruangan.
+              </p>
+            </div>
+
+            <div class="d-flex flex-column gap-2">
+              <div
+                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+              >
+                <i class="bi bi-brightness-high"></i>
+              </div>
+              <h4 class="fw-semibold mb-0">Elektrikal</h4>
+              <p class="text-muted">
+                Menyediakan berbagai macam lampu penerangan dan saklar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- faqs  -->
+    <div class="container pt-5" id="faq">
+      <div class="row align-items-center mb-3">
+        <div class="col-md-6">
+          <img
+            src="img/Chore_list.png"
+            class="img-fluid"
+            title="Pertanyaan Umum"
+            alt="Pertanyaan Umum"
+          />
+        </div>
+        <div class="col-md-6">
+          <p class="fs-5 fw-semibold mb-3">Frequently Asked Questions / FAQs</p>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Bagaimana cara memesan produk?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <span class="font-monospace text-primary">Sangat mudah!</span>
+                  Anda bisa langsung menghubungi kami dengan mengirimkan email
+                  dan chatting melalui aplikasi whatsapp. Atau anda juga bisa
+                  datang langsung ke alamat kantor.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  Metode pembayaran apa yang Anda terima?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Saat ini Tumitra hanya menerima dua jenis pembayaran :
+                  <ul>
+                    <li>Pembayaran Tunai dan</li>
+                    <li>Tranfer Bank</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  Kapan waktu pengiriman?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <span class="font-monospace text-primary">Secepatnya!</span>
+                  Kami akan segera memproses pesanan dan pengiriman barang Anda
+                  di hari yang sama jika tidak ada kendala dalam proses
+                  transaksi.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFour"
+                >
+                  Apakah barang yang rusak dapat dikembalikan?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingFour"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <span class="font-monospace text-primary">BISA!</span> Tumitra
+                  bertanggung jawab atas kerusakan barang. Silahkan hubungi kami
+                  untuk proses pengembalian.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container pb-5">
+      <div class="row text-center mb-3">
+        <div class="col-lg-6 mx-auto">
+          <h2 class="fw-normal">
+            “Tumitra is better than any other suppliers. we are very satisfied
+            with their service.”
+          </h2>
+          <blockquote class="blockquote text-muted mb-0">
+            <p></p>
+            <footer class="blockquote-footer">
+              Kenzie Anaki
+              <cite title=""> - Owner of Kenzhop Clothing</cite>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <!-- why -->
+    <div class="container text-center">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <p class="fs-5 fw-semibold lh-1 mb-1">Why Choose Us?</p>
+          <h1 class="display-2 fw-bold lh-1 mb-3">Comitment</h1>
+          <p class="text-muted">
+            Memiliki visi dan misi untuk menjadi mitra terbaik yang selalu siap
+            melayani kebutuhan pelanggan.
+          </p>
+        </div>
+        <div class="col-md-8">
+          <img
+            src="img/Personal_info.png"
+            class="img-fluid"
+            title="Mengapa Tumitra?"
+            alt="Mengapa tumitra"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container pb-3">
       <div
         class="row align-items-center justify-content-center mb-1 mt-3 mb-md-5 text-center"
       >
@@ -98,362 +364,93 @@
           </p>
         </div>
         <div class="col-md-3 col-6 mb-5 mb-md-0 border-end">
-          <h6>Mudah dipesan</h6>
-          <p><small class="text-muted">By WhatsApp</small></p>
+          <h6>Pengiriman</h6>
+          <p><small class="text-muted">Gratis! Ongkir.</small></p>
         </div>
         <div class="col-md-3 col-6 mb-5 mb-md-0 border-end">
-          <h6>Garansi kami</h6>
+          <h6>Garansi</h6>
           <p><small class="text-muted">100% Uang kembali.</small></p>
         </div>
         <div class="col-md-3 col-6 mb-5 mb-md-0">
-          <h6>Layanan pelanggan</h6>
+          <h6>Pelayanan</h6>
           <p><small class="text-muted">Support 24/7</small></p>
         </div>
       </div>
     </div>
 
-    <!-- about -->
-    <div class="container py-3">
-      <div class="about px-4 pb-md-4 mx-auto text-center">
-        <h2>Tentang Kami</h2>
-        <p class="fs-5 lead">
-          <strong class="fw-semibold">CV. Tumitra Prima Sarana</strong>
-          adalah pemasok umum <em>(General Supplier)</em> dan perusahaan
-          percetakan <em>(Printing)</em> yang bergerak di bidang pengadaan
-          Barang / Jasa untuk keperluan kantor atau lainnya. Berdiri sejak tahun
-          2022, Kami memiliki visi dan misi untuk menjadi mitra terbaik yang
-          selalu siap melayani kebutuhan pelanggan.
-        </p>
-      </div>
-      <div class="container text-center">
-        <div class="row justify-content-center">
-          <div class="col-md-4">
-            <figure class="text-center fs-5">
-              <blockquote class="blockquote">
-                <p>Life is for service.</p>
-              </blockquote>
-              <figcaption class="blockquote-footer">
-                Fred Rogers
-                <cite title="Source Title">- American Television Host</cite>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-4"><img src="img/verified.png" alt="" /></div>
+    <!-- contact  -->
+    <div class="container" id="contact">
+      <div class="row align-items-center mb-3">
+        <div class="col-md-6">
+          <img
+            src="img/Mailbox_re.png"
+            class="img-fluid"
+            title="Hubungi Kami"
+            alt="kontak tumitra"
+          />
         </div>
-      </div>
-    </div>
-
-    <!-- features -->
-    <div class="container px-4 py-3" id="features">
-      <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-        <div class="d-flex flex-column align-items-start gap-2">
-          <h1 class="fw-bold">Solusi Belanja Perlengkapan Kantor</h1>
-          <p class="lead">
-            Kami Menyediakan berbagai macam produk-produk berkualitas untuk
-            keperluan operasional kantor Anda.
-          </p>
-        </div>
-        <div class="row row-cols-1 row-cols-sm-2 ms-0 g-4">
-          <div class="d-flex flex-column gap-2">
-            <div
-              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-dark fs-4 rounded-3"
-            >
-              <i class="bi bi-pencil-square"></i>
-            </div>
-            <h4 class="fw-semibold mb-0">Alat Tulis</h4>
-            <p class="text-muted">
-              Menyediakan berbagai macam perlengkapan Alat Tulis Kantor.
-            </p>
-          </div>
-
-          <div class="d-flex flex-column gap-2">
-            <div
-              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-dark fs-4 rounded-3"
-            >
-              <i class="bi bi-printer"></i>
-            </div>
-            <h4 class="fw-semibold mb-0">Percetakan</h4>
-            <p class="text-muted">
-              Menyediakan produk cetak digital atau offset untuk usaha anda.
-            </p>
-          </div>
-
-          <div class="d-flex flex-column gap-2">
-            <div
-              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-dark fs-4 rounded-3"
-            >
-              <i class="bi bi-stars"></i>
-            </div>
-            <h4 class="fw-semibold mb-0">Kebersihan</h4>
-            <p class="text-muted">
-              Menyediakan peralatan kebersihan & Pengharum ruangan.
-            </p>
-          </div>
-
-          <div class="d-flex flex-column gap-2">
-            <div
-              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-dark fs-4 rounded-3"
-            >
-              <i class="bi bi-brightness-high"></i>
-            </div>
-            <h4 class="fw-semibold mb-0">Elektrikal</h4>
-            <p class="text-muted">
-              Menyediakan berbagai macam lampu penerangan dan saklar.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container pb-5">
-      <div class="callout-info fst-italic p-3 rounded">
-        Barang / Jasa yang kami tawarkan sebagianya (*) adalah produksi dalam
-        negeri yang sudah mendapatkan sertifikat Tingkat Komponen Dalam Negeri,
-        berstandarisasi nasional dan juga ramah lingkungan.
-      </div>
-    </div>
-
-    <!-- faqs -->
-    <div class="container pt-4 pb-3 text-center" id="faqs">
-      <h2>FAQs</h2>
-      <div class="row align-items-start justify-content-center">
-        <div class="col-md-10">
-          <div class="accordion text-start" id="accordionExample">
-            <div class="accordion-item border-0 border-bottom rounded-0">
-              <h2 class="accordion-header" id="headingOne">
-                <button
-                  class="accordion-button text-dark fw-semibold"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
+        <div class="col-md-6">
+          <dl class="row">
+            <p class="fs-5 fw-semibold mb-3">Contact Us</p>
+            <dt class="col-sm-3">Alamat :</dt>
+            <dd class="col-sm-9">
+              Baloi Indah, Kelurahan Kampung Pelita <br />Kecamatan Lubuk Baja -
+              Kota Batam<br />Kepulauan Riau 29443
+              <p class="pt-2">
+                <i class="bi bi-geo-alt-fill"></i>
+                <a
+                  href="https://goo.gl/maps/kEzLZtcsbZmLK6gd6"
+                  target="_blank"
+                  class="text-dark"
+                  >Google Map</a
                 >
-                  Bagaimana cara memesan produk?
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse show"
-                aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body text-muted">
-                  <strong class="text-dark">Sangat mudah!</strong> Anda bisa
-                  langsung menghubungi kami dengan mengirimkan email dan
-                  chatting melalui aplikasi whatsapp. Atau anda juga bisa datang
-                  langsung ke alamat kantor.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item border-0 border-bottom rounded-0">
-              <h2 class="accordion-header" id="headingTwo">
-                <button
-                  class="accordion-button collapsed text-dark fw-semibold"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  Metode pembayaran apa yang Anda terima?
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body text-muted">
-                  Saat ini Tumitra hanya menerima dua jenis pembayaran :
-                  <ul>
-                    <li>Pembayaran Tunai dan</li>
-                    <li>Tranfer Bank</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item border-0 border-bottom rounded-0">
-              <h2 class="accordion-header" id="headingThree">
-                <button
-                  class="accordion-button collapsed text-dark fw-semibold"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  Kapan waktu pengiriman?
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body text-muted">
-                  <strong class="text-dark">Secepatnya!</strong><br />Kami akan
-                  segera memproses pesanan dan pengiriman barang Anda di hari
-                  yang sama jika tidak ada kendala dalam proses transaksi.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item border-0 border-bottom rounded-0">
-              <h2 class="accordion-header" id="headingFour">
-                <button
-                  class="accordion-button collapsed text-dark fw-semibold"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour"
-                  aria-expanded="false"
-                  aria-controls="collapseFour"
-                >
-                  Apakah barang yang rusak dapat dikembalikan?
-                </button>
-              </h2>
-              <div
-                id="collapseFour"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingFour"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body text-muted">
-                  <strong class="text-dark">BISA!</strong><br />Tumitra
-                  bertanggung jawab atas kerusakan barang. Silahkan hubungi kami
-                  untuk proses pengembalian.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="testi text-center py-5">
-            <div class="col-lg-8 mx-auto">
-              <img src="img/Logo-kenzhop.png" class="img-fluid" alt="kenzhop" />
-              <h2 class="fw-normal">
-                “Tumitra is better than any other suppliers. we are very
-                satisfied with their service.”
-              </h2>
-              <blockquote class="blockquote text-muted mb-0">
-                <p></p>
-                <footer class="blockquote-footer">
-                  Kenzie Anaki
-                  <cite title=""> - Owner of Kenzhop Clothing</cite>
-                </footer>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+              </p>
+            </dd>
 
-    <!-- contact -->
-    <div class="container py-3" id="contact">
-      <div class="row">
-        <div class="col-md-10 align-self-center">
-          <h1 class="fw-bold lh-1 mb-3">Apa yang bisa kami bantu?</h1>
-          <p class="lead">
-            Tumitra siap melayani dan membantu pengadaan Barang / Jasa untuk
-            keperluan perlengkapan kantor atau usaha Anda. Hubungi kontak yang
-            tertera di bawah ini dan Kami akan segera meresponya.
-          </p>
-        </div>
-      </div>
-      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-        <div class="col d-flex align-items-start">
-          <div
-            class="icon-square text-bg-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
-          >
-            <i class="bi bi-geo-alt-fill"></i>
-          </div>
-          <div>
-            <h1 class="fs-4">Alamat Kantor</h1>
-            <p>
-              Baloi Indah, Kelurahan Kampung Pelita Kecamatn Lubuk Baja Kota
-              Batam - Kepulauan Riau 29443
-            </p>
-            <a
-              href="https://goo.gl/maps/kEzLZtcsbZmLK6gd6"
-              target="_blank"
-              class="btn btn-link link-dark"
-            >
-              <ul>
-                <li>Google Map</li>
-              </ul>
-            </a>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <div
-            class="icon-square text-bg-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
-          >
-            <i class="bi bi-person-lines-fill"></i>
-          </div>
-          <div>
-            <h1 class="fs-4">Kontak</h1>
-            <p>
-              Silahkan chat dengan kami atau email jika ada pertanyaan dan
-              permintaan produk baru.
-            </p>
-            <a
-              href="https://api.whatsapp.com/send?phone=+62811693570&text=Hai! Tumitra.. "
-              target="_blank"
-              class="btn btn-link link-dark"
-            >
-              <ul>
-                <li>WhatsApp</li>
-              </ul>
-            </a>
-            <a
-              href="mailto:tumitra.tps@gmail.com"
-              target="_blank"
-              class="btn btn-link link-dark"
-            >
-              <ul>
-                <li>Email</li>
-              </ul>
-            </a>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <div
-            class="icon-square text-bg-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
-          >
-            <i class="bi bi-hourglass-top"></i>
-          </div>
-          <div>
-            <h1 class="fs-4">Jam Operasional</h1>
-            <p>Senin - Sabtu ( 08-17 PM )<br /></p>
-            <span class="lh-1">Libur :</span>
-            <ul>
-              <li>Minggu</li>
-              <li>Hari Besar Nasional</li>
-            </ul>
-          </div>
+            <dt class="col-sm-3">Contact :</dt>
+            <dd class="col-sm-9">
+              <dl class="row">
+                <dt class="col-sm-3">Ponsel</dt>
+                <dd class="col-sm-9">+62 811 69 3570</dd>
+              </dl>
+              <dl class="row">
+                <dt class="col-sm-3">Email</dt>
+                <dd class="col-sm-9">tumitra.tps@gmail.com</dd>
+              </dl>
+            </dd>
+          </dl>
         </div>
       </div>
     </div>
 
     <!-- footer -->
     <div class="container">
-      <footer>
-        <div
-          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
-        >
-          <p>&copy; 2022 Tumitra, Cv &middot; All rights reserved.</p>
-          <ul class="list-unstyled d-flex">
-            <img src="img/footer.png" class="img-fluid" alt="office supplies" />
-          </ul>
-        </div>
-      </footer>
+      <div class="d-flex flex-column flex-sm-row justify-content-between">
+        <p>&copy; 2022 Tumitra, Cv. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <img src="img/footer.png" alt="office supplies solution" />
+        </ul>
+      </div>
     </div>
+
+    <!-- scroll top -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <i class="bi bi-chevron-up"></i>
     </button>
+
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
     <script>
       let mybutton = document.getElementById('myBtn');
 
