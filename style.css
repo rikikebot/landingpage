@@ -1,0 +1,32 @@
+.feature-icon-small {
+  width: 3rem;
+  height: 3rem;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.bi-star-fill,
+.bi-star-half {
+  color: #ffc107;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #212529;
+  color: #fff;
+  cursor: pointer;
+  padding: 0px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
