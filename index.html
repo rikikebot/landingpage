@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -77,12 +78,26 @@
     <div class="container px-4 pt-5">
       <div class="row flex-md-row-reverse align-items-center mb-3">
         <div class="col-md-7">
-          <img
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/Hello.png" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="Img/Ongkir.png" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+          <!-- <img 
             src="img/Hello.png"
             class="img-fluid"
             title="Hello Mitra!"
             alt="Tumitra"
-          />
+          />-->
         </div>
         <div class="col-md-5">
           <h1
@@ -107,6 +122,7 @@
           <img
             src="img/Profile.png"
             class="img-fluid"
+            data-aos="fade-right"
             title="Tentang Tumitra"
             alt="tentang tumitra"
           />
@@ -119,10 +135,9 @@
             General Supplier & Printing
           </h1>
           <p class="text-muted">
-            Kami adalah perusahaan yang bergerak di bidang pengadaan Barang /
-            Jasa peralatan kantor atau usaha lainya. Kami Menyediakan berbagai
-            macam produk-produk berkualitas untuk keperluan operasional kantor
-            Anda.
+            Kami perusahaan yang bergerak di bidang pengadaan Barang atau Jasa
+            yang menyediakan berbagai macam produk-produk berkualitas untuk
+            keperluan operasional kantor Anda.
           </p>
           <img src="img/verified.png" class="float-end" alt="jaminan tumitra" />
         </div>
@@ -136,6 +151,7 @@
           <img
             src="img/File.png"
             class="img-fluid"
+            data-aos="flip-right"
             title="Barang & Jasa"
             alt="barang dan jasa"
           />
@@ -209,12 +225,18 @@
           <img
             src="img/Notes.png"
             class="img-fluid"
+            data-aos="zoom-in"
             title="Pertanyaan Umum"
             alt="Pertanyaan Umum"
           />
         </div>
         <div class="col-md-6">
-          <p class="fs-5 fw-semibold mb-3">Frequently Asked Questions / FAQs</p>
+          <h1
+            class="display-4 fst-italic lh-1 mb-3"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            Frequently Asked Questions
+          </h1>
           <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
@@ -236,7 +258,7 @@
                 data-bs-parent="#accordionFlushExample"
               >
                 <div class="accordion-body">
-                  <span class="font-monospace text-primary">Sangat mudah!</span>
+                  <span class="font-monospace fw-semibold">Sangat mudah!</span>
                   Anda bisa langsung menghubungi kami dengan mengirimkan email
                   dan chatting melalui aplikasi whatsapp. Atau anda juga bisa
                   datang langsung ke alamat kantor.
@@ -291,7 +313,7 @@
                 data-bs-parent="#accordionFlushExample"
               >
                 <div class="accordion-body">
-                  <span class="font-monospace text-primary">Secepatnya!</span>
+                  <span class="font-monospace fw-semibold">Secepatnya!</span>
                   Kami akan segera memproses pesanan dan pengiriman barang Anda
                   di hari yang sama jika tidak ada kendala dalam proses
                   transaksi.
@@ -318,7 +340,7 @@
                 data-bs-parent="#accordionFlushExample"
               >
                 <div class="accordion-body">
-                  <span class="font-monospace text-primary">BISA!</span> Tumitra
+                  <span class="font-monospace fw-semibold">BISA!</span> Tumitra
                   bertanggung jawab atas kerusakan barang. Silahkan hubungi kami
                   untuk proses pengembalian.
                 </div>
@@ -353,12 +375,18 @@
           <img
             src="img/Task.png"
             class="img-fluid"
+            data-aos="fade-left"
             title="Mengapa Tumitra?"
             alt="Mengapa tumitra"
           />
         </div>
         <div class="col-md-5">
-          <p class="fs-5 fw-semibold lh-1 mb-1">Why Choose Us?</p>
+          <h1
+            class="display-4 fst-italic lh-1 mb-3"
+            style="font-family: 'Times New Roman', Times, serif"
+          >
+            Why Choose Us?
+          </h1>
           <p class="text-muted">
             Memiliki visi dan misi untuk menjadi mitra terbaik yang selalu siap
             melayani kebutuhan pelanggan.
@@ -411,13 +439,19 @@
           <img
             src="img/Contact.png"
             class="img-fluid"
+            data-aos="flip-up"
             title="Hubungi Kami"
             alt="kontak tumitra"
           />
         </div>
         <div class="col-md-5">
           <dl class="row">
-            <p class="fs-5 fw-semibold mb-3">Contact Us</p>
+            <h1
+              class="display-4 fst-italic lh-1 mb-3"
+              style="font-family: 'Times New Roman', Times, serif"
+            >
+              Contact Us
+            </h1>
             <dt class="col-sm-3">Alamat</dt>
             <dd class="col-sm-9">
               Baloi Indah, Kelurahan Kampung Pelita <br />Kecamatan Lubuk Baja -
@@ -469,6 +503,12 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- tooltip -->
     <script>
       const tooltipTriggerList = document.querySelectorAll(
         '[data-bs-toggle="tooltip"]'
@@ -477,6 +517,7 @@
         (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
       );
     </script>
+    <!-- btn-scroll -->
     <script>
       let mybutton = document.getElementById('myBtn');
 
