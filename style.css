@@ -5,6 +5,9 @@
 .accordion-button:focus {
   box-shadow: none;
 }
+.accordion-button:not(.collapsed) {
+  background-color: #f8f9fa;
+}
 .bi-star-fill,
 .bi-star-half {
   color: #ffc107;
