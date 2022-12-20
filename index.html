@@ -19,39 +19,24 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg border-bottom">
-      <div class="container">
-        <a class="navbar-brand fw-semibold fs-6">https://tumitra.com/</a>
-        <button
-          class="navbar-toggler border-0"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#faq">FAQs</a>
-            </li>
-          </ul>
-          <span class="navbar-text fst-italic"> The Best Partner </span>
-        </div>
+    <div class="cover-container d-flex w-100 h-100 pt-3 mx-auto flex-column">
+      <div class="header mb-0">
+        <h5 class="float-md-start text-center fw-bold mb-3">tumitra.com</h5>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a
+            class="nav-link fw-bold py-1 px-0 active"
+            aria-current="page"
+            href="#"
+            >Home</a
+          >
+          <a class="nav-link fw-bold py-1 px-0" href="#about">About</a>
+          <a class="nav-link fw-bold py-1 px-0" href="#faq">FAQs</a>
+        </nav>
       </div>
-    </nav>
+    </div>
 
     <!-- hero -->
-    <div class="px-4 py-5 text-center">
+    <div class="px-4 pt-5 pb-2 text-center">
       <h1 class="display-2 fw-bold">Hello, Mitra!</h1>
       <div class="col-lg-6 mx-auto">
         <p class="text-muted lead mb-4">
@@ -63,7 +48,7 @@
         </p>
         <div class="d-grid gap-2 d-md-block">
           <a
-            class="btn btn-primary px-5 rounded-1 py-2"
+            class="btn btn-primary px-5 py-2 rounded-1"
             href="#contact"
             role="button"
             >Hubungi kami</a
@@ -86,9 +71,9 @@
         <div class="col-lg-6 mb-4">
           <h2 class="fw-bold lh-1 mb-3">Office Supplies Solution</h2>
           <p class="text-muted">
-            Kami perusahaan yang bergerak di bidang pengadaan Barang dan Jasa
-            yang menyediakan berbagai macam produk-produk berkualitas untuk
-            keperluan operasional kantor Anda.
+            Kami perusahaan yang bergerak di bidang pengadaan Barang / Jasa yang
+            menyediakan berbagai macam produk-produk berkualitas untuk keperluan
+            operasional kantor Anda.
           </p>
         </div>
       </div>
@@ -118,7 +103,7 @@
         </div>
         <div class="col-md-3 col-6 mb-5 mb-md-0">
           <h6>Free Support</h6>
-          <p><small class="text-muted">24/7 Service</small></p>
+          <p><small class="text-muted">24/7 Service.</small></p>
         </div>
       </div>
       <hr class="d-lg-none" />
@@ -137,9 +122,9 @@
           <img src="img/verified.png" class="float-end" alt="" />
         </div>
         <div class="col-lg-5 mb-5">
-          <div class="card rounded-1">
-            <div class="card-header bg-light text-center p-3 fw-bold">
-              Daftar Barang & Jasa
+          <div class="card">
+            <div class="card-header text-white bg-primary text-center p-3">
+              Daftar Barang / Jasa
             </div>
             <ul class="list-group list-group-flush list-group-numbered p-2">
               <li
@@ -149,7 +134,6 @@
                   <div class="fw-bold">Perlengkapan Kantor</div>
                   Alat Tulis & Kertas Multi Fungsi
                 </div>
-                <span class="badge bg-primary rounded-pill">10</span>
               </li>
               <li
                 class="list-group-item d-flex justify-content-between align-items-start"
@@ -158,7 +142,6 @@
                   <div class="fw-bold">Percetakan</div>
                   Formulir & Nota
                 </div>
-                <span class="badge bg-primary rounded-pill">10</span>
               </li>
               <li
                 class="list-group-item d-flex justify-content-between align-items-start"
@@ -167,7 +150,6 @@
                   <div class="fw-bold">Peralatan Kebersihan</div>
                   Pembersih & Pengharum Ruangan
                 </div>
-                <span class="badge bg-primary rounded-pill">10</span>
               </li>
               <li
                 class="list-group-item d-flex justify-content-between align-items-start"
@@ -176,25 +158,9 @@
                   <div class="fw-bold">Elektrikal</div>
                   Lampu & Saklar
                 </div>
-                <span class="badge bg-primary rounded-pill">10</span>
               </li>
             </ul>
           </div>
-          <!-- <div class="card"> 
-            <div class="card-header text-white bg-primary text-center p-2">
-              Daftar Barang & Jasa
-            </div>
-            <ul class="list-group list-group-flush p-2">
-              <li class="list-group-item">
-                Alat tulis kantor & Kertas multi fungsi
-              </li>
-              <li class="list-group-item">Percetakan Digital / Offset</li>
-              <li class="list-group-item">
-                Alat kebersihan & Pengharum ruangan
-              </li>
-              <li class="list-group-item">Elektrikal ( Lampu & Saklar )</li>
-            </ul>
-          </div>-->
         </div>
       </div>
       <hr class="d-lg-none" />
@@ -204,7 +170,7 @@
     <div class="px-4 py-5 text-center" id="faq">
       <div class="col-lg-7 mx-auto">
         <h2 class="fw-bold lh-1 mb-3">
-          <i class="bi bi-check-all text-primary"></i> FAQs
+          <i class="bi bi-plus text-primary"></i>FAQs
         </h2>
         <div class="accordion text-start" id="accordionExample">
           <div class="accordion-item border-0 border-bottom rounded-0">
