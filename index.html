@@ -18,6 +18,62 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- navbar -->
+    <nav class="navbar border-bottom">
+      <div class="container">
+        <ul class="nav">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link link-dark fs-5 fw-semibold dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-expanded="false"
+              >Tumitra</a
+            >
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#about">About</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#faq">FAQs</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav">
+          <li class="nav-item">
+            <a
+              class="nav-link link-dark fs-5"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="WhatsApp"
+              href="https://api.whatsapp.com/send?phone=+62811693570&text=Hai! Tumitra.. "
+              target="_blank"
+              ><i class="bi bi-whatsapp"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link link-dark fs-5"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Hubungi Kami"
+              href="tel:+62811693570"
+              ><i class="bi bi-telephone-inbound"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link link-dark fs-5"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Kirim Email"
+              href="mailto:tumitra.tps@gmail.com"
+              target="_blank"
+              ><i class="bi bi-envelope-at"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!-- hero -->
     <div class="px-4 pt-5 text-center">
       <h1 class="display-2 fw-bold">Hello, Mitra!</h1>
@@ -40,7 +96,7 @@
     </div>
 
     <!-- about -->
-    <div class="container px-4 pt-5">
+    <div class="container px-4 pt-5" id="about">
       <div class="row flex-lg-row-reverse align-items-center g-5">
         <div class="col-lg-6">
           <img
@@ -149,7 +205,7 @@
     </div>
 
     <!-- faqs -->
-    <div class="px-4 py-5 text-center">
+    <div class="px-4 py-5 text-center" id="faq">
       <div class="col-lg-7 mx-auto">
         <h2 class="fw-bold lh-1 mb-3">
           <i class="bi bi-plus text-primary"></i>FAQs
