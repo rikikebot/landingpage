@@ -31,10 +31,19 @@
           >
         </p>
       </div>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a
+          class="btn btn-success px-5 py-2 rounded-1"
+          href="https://api.whatsapp.com/send?phone=+62811693570&text=Hai! Tumitra.. "
+          target="_blank"
+          role="button"
+          >Hubungi Kami</a
+        >
+      </div>
     </div>
 
     <!-- about -->
-    <div class="container px-4" id="about">
+    <div class="container px-4 pt-5">
       <div class="row flex-lg-row-reverse align-items-center g-5">
         <div class="col-lg-6">
           <img
@@ -143,7 +152,7 @@
     </div>
 
     <!-- faqs -->
-    <div class="px-4 py-5 text-center" id="faq">
+    <div class="px-4 py-5 text-center">
       <div class="col-lg-7 mx-auto">
         <h2 class="fw-bold lh-1 mb-3">
           <i class="bi bi-plus text-success"></i>FAQs
@@ -278,8 +287,8 @@
 
     <!-- contact -->
     <div class="container py-4 my-4 border-top">
-      <div class="row">
-        <div class="col-lg-6 mb-3">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mb-3">
           <h5>Office Address</h5>
           <p class="small text-muted">
             Baloi Indah, Jl. Gn. Merbabu No.03 Kota Batam - 29443
@@ -287,10 +296,22 @@
           </p>
         </div>
 
-        <div class="col-lg-6 mb-3">
-          <p class="small text-muted">Terima kasih telah menghubungi kami.</p>
-          <div class="d-grid gap-2 d-md-flex">
-            <a
+        <div class="col-lg-5 mb-3">
+          <!-- <p class="small text-muted">Terima kasih telah menghubungi kami.</p> -->
+          <form class="d-flex">
+            <input
+              class="form-control me-3 p-2 rounded-1"
+              type="email"
+              id="exampleInputEmail1"
+              placeholder="Email address"
+              aria-label="Email address"
+            />
+            <button class="btn btn-success rounded-1" type="submit">
+              Subscribe
+            </button>
+          </form>
+
+          <!-- <a 
               class="btn btn-success px-5 rounded-1 py-2 me-md-2"
               href="https://api.whatsapp.com/send?phone=+62811693570&text=Hai! Tumitra.. "
               target="_blank"
@@ -303,8 +324,7 @@
               target="_blank"
               role="button"
               >Send e-mail</a
-            >
-          </div>
+            >-->
         </div>
       </div>
 
