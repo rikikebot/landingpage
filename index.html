@@ -37,13 +37,20 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="navbar-nav me-auto">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">About Us</a>
-            <a class="nav-link" href="#">FAQs</a>
+        <div class="collapse navbar-collapse mb-3 mb-lg-0" id="navbarNav">
+          <div class="navbar-nav me-auto flex-row flex-wrap py-3 py-lg-0">
+            <a class="nav-link col-6 col-lg-auto" aria-current="page" href="#"
+              >Home</a
+            >
+            <a class="nav-link col-6 me-auto col-lg-auto" href="#about"
+              >About Us</a
+            >
+            <a class="nav-link col-6 me-auto col-lg-auto" href="#product"
+              >Our Products</a
+            >
+            <a class="nav-link col-6 me-auto col-lg-auto" href="#faq">FAQs</a>
           </div>
-          <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+          <div class="d-lg-flex col-lg-3 justify-content-lg-end my-2 my-lg-0">
             <a
               class="btn btn-success btn-sm px-3 rounded-1"
               href="mailto:tumitra.tps@gmail.com"
@@ -86,7 +93,7 @@
     </div>
 
     <!-- about -->
-    <div class="container px-4">
+    <div class="container px-4 py-3" id="about">
       <div class="row flex-lg-row-reverse align-items-center g-5">
         <div class="col-lg-6">
           <img
@@ -138,7 +145,7 @@
     </div>
 
     <!-- features -->
-    <div class="container px-4 pt-5">
+    <div class="container px-4 pt-5" id="product">
       <div class="row flex-lg-row-reverse align-items-center g-5">
         <div class="col-lg-7 text-start">
           <h2 class="fw-bold lh-1 mb-3">General Supplier and Printing</h2>
@@ -160,7 +167,7 @@
               >
                 <div class="ms-2 me-auto">
                   <div class="fw-bold">Perlengkapan Kantor</div>
-                  Alat Tulis & Kertas Multi Fungsi
+                  <span class="text-muted">Tulis & Kertas Multi Fungsi</span>
                 </div>
               </li>
               <li
@@ -168,7 +175,7 @@
               >
                 <div class="ms-2 me-auto">
                   <div class="fw-bold">Percetakan</div>
-                  Formulir & Nota
+                  <span class="text-muted">Formulir & Nota</span>
                 </div>
               </li>
               <li
@@ -176,7 +183,7 @@
               >
                 <div class="ms-2 me-auto">
                   <div class="fw-bold">Peralatan Kebersihan</div>
-                  Pembersih & Pengharum Ruangan
+                  <span class="text-muted">Pembersih & Pengharum Ruangan</span>
                 </div>
               </li>
               <li
@@ -184,10 +191,35 @@
               >
                 <div class="ms-2 me-auto">
                   <div class="fw-bold">Elektrikal</div>
-                  Lampu & Saklar
+                  <span class="text-muted">Lampu & Saklar</span>
                 </div>
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- brand -->
+      <div class="col-md-8 mx-auto text-center pb-3">
+        <h4 class="fw-semibold">Our Best Selling Product</h4>
+        <p class="text-muted">
+          Rekomendasi produk berkualitas untuk Anda yang sering digunakan banyak
+          perushaan.
+        </p>
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center gap-4 my-4"
+        >
+          <div class="brand-1 d-flex flex-column align-items-center">
+            <img src="img/brand/bantex.png" alt="bantex" />
+            <span class="text-muted">Organizing Made Easy</span>
+          </div>
+          <div class="brand-2 d-flex flex-column align-items-center">
+            <img src="img/brand/epson.png" alt="epson" />
+            <span class="text-muted">Exceed Your Vision</span>
+          </div>
+          <div class="brand-3 d-flex flex-column align-items-center">
+            <img src="img/brand/sidu.png" alt="sidu" />
+            <span class="text-muted">Quality Paper Brand</span>
           </div>
         </div>
       </div>
@@ -195,7 +227,7 @@
     </div>
 
     <!-- faqs -->
-    <div class="px-4 py-5 text-center">
+    <div class="px-4 py-5 text-center" id="faq">
       <div class="col-lg-7 mx-auto">
         <h2 class="fw-bold lh-1 mb-3">
           <i class="bi bi-plus text-success"></i>FAQs
