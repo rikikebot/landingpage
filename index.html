@@ -52,7 +52,8 @@
           <div class="d-lg-flex col-lg-3 justify-content-lg-end">
             <a
               class="btn btn-success btn-sm px-3 rounded-1 mb-3 mb-lg-0"
-              href="#"
+              href="mailto:tumitra.tps@gmail.com"
+              target="_blank"
               role="button"
               >Send Email</a
             >
@@ -66,8 +67,8 @@
       <h1 class="display-2 fw-bold">Hello, Mitra!</h1>
       <div class="col-lg-6 mx-auto">
         <p class="text-muted lead mb-4">
-          Dapatkan berbagai macam kebutuhan perlengkapan kantor Anda bersama
-          Kami dan Gratis ongkos kirim Tanpa Minimal Belanja.
+          Dapatkan berbagai macam kebutuhan perlengkapan kantor anda bersama
+          kami dan Gratis ongkos kirim tanpa minimal belanja.
           <span
             class="badge fw-semibold text-success bg-success bg-opacity-10 border border-success border-opacity-10 rounded-1"
             >#khususbatam</span
@@ -76,11 +77,11 @@
       </div>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
         <a
-          class="btn btn-success px-5 py-2 rounded-1"
+          class="btn btn-success px-3 py-2 rounded-1"
           href="https://api.whatsapp.com/send?phone=+62811693570&text=Hai! Tumitra.. "
           target="_blank"
           role="button"
-          >Hubungi Kami</a
+          >WhatsApp Messenger</a
         >
       </div>
       <div class="d-flex justify-content-center py-3">
@@ -345,34 +346,33 @@
         </div>
 
         <div class="col-lg-5 mb-3">
-          <!-- <p class="small text-muted">Terima kasih telah menghubungi kami.</p> -->
-          <form class="d-flex">
+          <div
+            class="alert alert-secondary alert-dismissible fade show d-none my-alert"
+            role="alert"
+          >
+            <i class="bi bi-check-circle-fill text-success"></i>
+            Thank you for subscribing to our newsletter.
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            ></button>
+          </div>
+          <form name="submit-to-google-sheet" class="d-flex" autocomplete="off">
             <input
               class="form-control me-3 p-2 rounded-1"
               type="email"
               id="exampleInputEmail1"
               placeholder="Email address"
               aria-label="Email address"
+              name="email"
+              required
             />
-            <button class="btn btn-success rounded-1" type="submit">
+            <button class="btn-kirim btn btn-success rounded-1" type="submit">
               Subscribe
             </button>
           </form>
-
-          <!-- <a 
-              class="btn btn-success px-5 rounded-1 py-2 me-md-2"
-              href="https://api.whatsapp.com/send?phone=+62811693570&text=Hai! Tumitra.. "
-              target="_blank"
-              role="button"
-              >WhatsApp messages</a
-            >
-            <a
-              class="btn btn-success px-5 rounded-1 py-2"
-              href="mailto:tumitra.tps@gmail.com"
-              target="_blank"
-              role="button"
-              >Send e-mail</a
-            >-->
         </div>
       </div>
 
@@ -397,6 +397,27 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+
+    <!-- form submit -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwICx1uhDGiCPXdwZiPc8-dMo0oEmmKL_jZH0yUA9ghSfEdMdVSNNsF8_7HCzq7sqpk/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      const btnKirim = document.querySelector(".btn-kirim");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            myAlert.classList.toggle("d-none");
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
 
     <!-- tooltip -->
     <script>
