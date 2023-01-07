@@ -9,13 +9,15 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
-    />
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- navbar -->
@@ -31,8 +33,7 @@
           data-bs-target="#navbarText"
           aria-controls="navbarText"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
@@ -64,7 +65,10 @@
 
     <!-- hero -->
     <div class="px-4 pt-5 text-center">
-      <h1 class="display-2 fw-bold">Hello, Mitra!</h1>
+      <h1
+        class="display-2 fw-bold animate__animated animate__backInDown animate__repeat-2 2 animate__slow 3s">
+        Hello, Mitra!
+      </h1>
       <div class="col-lg-6 mx-auto">
         <p class="text-muted lead mb-4">
           Dapatkan berbagai macam kebutuhan perlengkapan kantor anda bersama
@@ -99,8 +103,7 @@
             src="img/about.png"
             class="img-fluid"
             title="Tentang Tumitra"
-            alt="tentang kami"
-          />
+            alt="tentang kami" />
         </div>
         <div class="col-lg-6 mb-4">
           <h2 class="fw-bold lh-1 mb-3">Office Supplies Solution</h2>
@@ -115,8 +118,7 @@
 
     <div class="container">
       <div
-        class="row align-items-center justify-content-center mb-1 mt-3 mb-md-5 text-center"
-      >
+        class="row align-items-center justify-content-center mb-1 mt-3 mb-md-5 text-center">
         <div class="col-md-3 col-6 mb-5 mb-md-0 border-end">
           <h6>Average Rating</h6>
           <p>
@@ -147,8 +149,10 @@
     <div class="container px-4 pt-5" id="product">
       <div class="row flex-lg-row-reverse align-items-center g-5">
         <div class="col-lg-7 text-start">
-          <h2 class="fw-bold lh-1 mb-3">General Supplier and Printing</h2>
-          <p class="text-muted">
+          <h2 class="fw-bold lh-1 mb-3" data-aos="fade-down">
+            General Supplier and Printing
+          </h2>
+          <p class="text-muted" data-aos="fade-left">
             Barang / Jasa yang kami tawarkan sebagianya adalah diproduksi dalam
             negeri dan sudah mendapatkan sertifikat Tingkat Komponen Dalam
             Negeri, berstandarisasi nasional serta ramah lingkungan.
@@ -157,37 +161,34 @@
         </div>
         <div class="col-lg-5 mb-5">
           <div class="card rounded-1">
-            <div class="card-header bg-secondary bg-opacity-10 text-center p-3 rounded-top-1">
+            <div
+              class="card-header bg-secondary bg-opacity-10 text-center p-3 rounded-top-1">
               Daftar Barang / Jasa
             </div>
             <ul class="list-group list-group-flush list-group-numbered p-2">
               <li
-                class="list-group-item d-flex justify-content-between align-items-start"
-              >
+                class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">
                   <div class="fw-bold">Perlengkapan Kantor</div>
                   <span class="text-muted">Tulis & Kertas Multi Fungsi</span>
                 </div>
               </li>
               <li
-                class="list-group-item d-flex justify-content-between align-items-start"
-              >
+                class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">
                   <div class="fw-bold">Percetakan</div>
                   <span class="text-muted">Formulir & Nota</span>
                 </div>
               </li>
               <li
-                class="list-group-item d-flex justify-content-between align-items-start"
-              >
+                class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">
                   <div class="fw-bold">Peralatan Kebersihan</div>
                   <span class="text-muted">Pembersih & Pengharum Ruangan</span>
                 </div>
               </li>
               <li
-                class="list-group-item d-flex justify-content-between align-items-start"
-              >
+                class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">
                   <div class="fw-bold">Elektrikal</div>
                   <span class="text-muted">Lampu & Saklar</span>
@@ -215,8 +216,7 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseOne"
                 aria-expanded="true"
-                aria-controls="collapseOne"
-              >
+                aria-controls="collapseOne">
                 Bagaimana cara memesan produk?
               </button>
             </h2>
@@ -224,8 +224,7 @@
               id="collapseOne"
               class="accordion-collapse collapse show"
               aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
+              data-bs-parent="#accordionExample">
               <div class="accordion-body text-muted">
                 <strong class="text-dark">Sangat mudah!</strong> Anda bisa
                 langsung menghubungi kami dengan mengirimkan email dan chatting
@@ -242,8 +241,7 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo"
                 aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
+                aria-controls="collapseTwo">
                 Metode pembayaran apa yang Anda terima?
               </button>
             </h2>
@@ -251,8 +249,7 @@
               id="collapseTwo"
               class="accordion-collapse collapse"
               aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
-            >
+              data-bs-parent="#accordionExample">
               <div class="accordion-body text-muted">
                 Saat ini Tumitra hanya menerima dua jenis pembayaran :
                 <ul>
@@ -270,8 +267,7 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseThree"
                 aria-expanded="false"
-                aria-controls="collapseThree"
-              >
+                aria-controls="collapseThree">
                 Kapan waktu pengiriman?
               </button>
             </h2>
@@ -279,8 +275,7 @@
               id="collapseThree"
               class="accordion-collapse collapse"
               aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample"
-            >
+              data-bs-parent="#accordionExample">
               <div class="accordion-body text-muted">
                 <strong class="text-dark">Secepatnya!</strong><br />Kami akan
                 segera memproses pesanan dan pengiriman barang Anda di hari yang
@@ -296,8 +291,7 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseFour"
                 aria-expanded="false"
-                aria-controls="collapseFour"
-              >
+                aria-controls="collapseFour">
                 Apakah barang yang rusak dapat dikembalikan?
               </button>
             </h2>
@@ -305,8 +299,7 @@
               id="collapseFour"
               class="accordion-collapse collapse"
               aria-labelledby="headingFour"
-              data-bs-parent="#accordionExample"
-            >
+              data-bs-parent="#accordionExample">
               <div class="accordion-body text-muted">
                 <strong class="text-dark">BISA!</strong><br />Tumitra
                 bertanggung jawab atas kerusakan barang. Silahkan hubungi kami
@@ -320,7 +313,7 @@
 
     <div class="px-4 text-center pb-5 mb-5">
       <div class="col-lg-6 mx-auto">
-        <h3 class="fw-normal">
+        <h3 class="fw-normal" data-aos="zoom-in">
           “Tumitra is better than any other suppliers. we are very satisfied
           with their service.”
         </h3>
@@ -348,16 +341,14 @@
         <div class="col-lg-5 mb-3">
           <div
             class="alert alert-secondary alert-dismissible fade show d-none my-alert"
-            role="alert"
-          >
+            role="alert">
             <i class="bi bi-check-circle-fill text-success"></i>
             Thank you for subscribing to our newsletter.
             <button
               type="button"
               class="btn-close"
               data-bs-dismiss="alert"
-              aria-label="Close"
-            ></button>
+              aria-label="Close"></button>
           </div>
           <form name="submit-to-google-sheet" class="d-flex" autocomplete="off">
             <input
@@ -367,8 +358,7 @@
               placeholder="Email address"
               aria-label="Email address"
               name="email"
-              required
-            />
+              required />
             <button class="btn-kirim btn btn-success rounded-1" type="submit">
               Subscribe
             </button>
@@ -378,8 +368,7 @@
 
       <!-- footer -->
       <div
-        class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
-      >
+        class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
         <p>&copy; 2022 Tumitra, Cv. All rights reserved.</p>
         <ul class="list-unstyled d-flex">
           <img src="img/footer.png" class="img-fluid" alt="office supplies" />
@@ -395,8 +384,14 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
 
     <!-- form submit -->
     <script>
