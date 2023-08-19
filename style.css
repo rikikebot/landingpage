@@ -1,0 +1,12 @@
+.navbar-brand {
+  font-size: 20px;
+}
+
+.feature-icon-small {
+  width: 3rem;
+  height: 3rem;
+}
+
+.container-sm {
+  max-width: 992px;
+}
