@@ -33,6 +33,10 @@
       .accordion-button:focus {
         box-shadow: none;
       }
+      .footer-nav:hover {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
     </style>
   </head>
   <body>
@@ -270,6 +274,11 @@
               Quickly design and customize responsive mobile-first sites with
               Bootstrap, the world’s most popular front-end open source toolkit.
             </p>
+            <div class="row">
+              <div class="col text-lg-end">
+                <img src="img/verified.png" alt="" />
+              </div>
+            </div>
           </div>
           <div class="col-lg-6">
             <div class="row">
@@ -592,10 +601,6 @@
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <!-- <div 
-              class="icon-square text-bg-primary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-              <i class="bi bi-book"></i>
-            </div>-->
             <div>
               <h3 class="fs-2 text-body-emphasis">Contact Us</h3>
 
@@ -606,20 +611,11 @@
               </p>
               <div class="hstack gap-3">
                 <a class="btn btn-primary" href="#" role="button">WhatsApp</a>
-                <!-- <a 
-                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                  href="#">
-                  WhatsApp
-                </a>-->
+
                 <div class="vr"></div>
                 <a class="btn btn-outline-primary" href="#" role="button"
                   >Send Email</a
                 >
-                <!-- <a 
-                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                  href="#">
-                  Send Email
-                </a>-->
               </div>
             </div>
           </div>
@@ -636,19 +632,29 @@
 
         <ul class="nav col-md-6 justify-content-end">
           <li class="nav-item">
-            <a href="#" class="nav-link px-2">Home</a>
+            <a href="#" class="nav-link footer-nav link-body-emphasis px-2"
+              >Home</a
+            >
           </li>
           <div class="vr mx-2 align-self-center"></div>
           <li class="nav-item">
-            <a href="#about" class="nav-link px-2">About Us</a>
+            <a href="#about" class="nav-link footer-nav link-body-emphasis px-2"
+              >About Us</a
+            >
           </li>
           <div class="vr mx-2 align-self-center"></div>
           <li class="nav-item">
-            <a href="#services" class="nav-link px-2">Services</a>
+            <a
+              href="#services"
+              class="nav-link footer-nav link-body-emphasis px-2"
+              >Services</a
+            >
           </li>
           <div class="vr mx-2 align-self-center"></div>
           <li class="nav-item">
-            <a href="#faqs" class="nav-link px-2">FAQs</a>
+            <a href="#faqs" class="nav-link footer-nav link-body-emphasis px-2"
+              >FAQs</a
+            >
           </li>
         </ul>
       </footer>
