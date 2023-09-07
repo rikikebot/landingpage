@@ -32,3 +32,6 @@ nav .container {
 .bg-line {
   margin-left: -100px;
 }
+.brands {
+  max-width: 991px;
+}
