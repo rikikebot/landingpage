@@ -4,6 +4,9 @@ nav .container {
 .navbar-toggler:focus {
   box-shadow: none;
 }
+.dropdown-toggle {
+  box-shadow: none;
+}
 .dropdown-item:focus {
   background-color: #212529;
 }
