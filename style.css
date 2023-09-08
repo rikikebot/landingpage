@@ -4,10 +4,6 @@ nav .container {
 .navbar-toggler:focus {
   box-shadow: none;
 }
-.dropdown-toggle {
-  outline: none;
-  box-shadow: none;
-}
 .dropdown-item:focus {
   background-color: #212529;
 }
@@ -37,5 +33,5 @@ nav .container {
   margin-left: -100px;
 }
 .brands {
-  max-width: 991px;
+  max-width: 992px;
 }
