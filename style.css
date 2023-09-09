@@ -1,4 +1,4 @@
-body {
+/* body { 
   background-image: linear-gradient(
     180deg,
     var(--bs-secondary-bg),
@@ -6,7 +6,7 @@ body {
     var(--bs-body-bg)
   );
   background-repeat: no-repeat;
-}
+}*/
 nav .container {
   max-width: 1140px;
 }
