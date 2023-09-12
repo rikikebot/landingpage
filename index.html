@@ -57,24 +57,30 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul
-            class="navbar-nav flex-row flex-wrap mt-3 mt-lg-0 ms-0 ms-lg-5 py-2 py-lg-0">
+            class="navbar-nav flex-row flex-wrap mt-3 mt-lg-0 ms-auto py-2 py-lg-0">
             <li class="nav-item col-6 col-lg-auto">
               <a class="nav-link" href="#"
-                ><i class="bi bi-dot me-2 d-xl-none"></i>About Us</a
+                ><i class="bi bi-dot me-2 d-lg-none d-xl-none"></i>Home</a
               >
             </li>
             <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link" href="#"
-                ><i class="bi bi-dot me-2 d-xl-none"></i>The Products</a
+              <a class="nav-link mx-lg-3" href="#"
+                ><i class="bi bi-dot me-2 d-lg-none d-xl-none"></i>About Us</a
               >
             </li>
             <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link" href="#"
-                ><i class="bi bi-dot me-2 d-xl-none"></i>Why Our Services?</a
+              <a class="nav-link me-lg-1" href="#"
+                ><i class="bi bi-dot me-2 d-lg-none d-xl-none"></i>Our
+                Products</a
+              >
+            </li>
+            <li class="nav-item col-6 col-lg-auto d-xl-none">
+              <a class="nav-link mx-lg-3" href="#"
+                ><i class="bi bi-dot me-2 d-lg-none d-xl-none"></i>FAQs</a
               >
             </li>
           </ul>
-          <ul class="navbar-nav ms-lg-auto mx-2">
+          <ul class="navbar-nav mx-2">
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -93,8 +99,12 @@
                     >Send Email</a
                   >
                 </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">FAQs</a></li>
+                <li>
+                  <hr class="dropdown-divider d-none d-lg-block" />
+                </li>
+                <li>
+                  <a class="dropdown-item d-none d-lg-block" href="#">FAQs</a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -129,7 +139,7 @@
     </div>
 
     <!-- hero -->
-    <div class="container my-5 pt-3 pb-4">
+    <div class="container my-5">
       <div class="row justify-content-center">
         <div class="col-md-8 mx-auto text-center">
           <a
@@ -138,43 +148,16 @@
             role="button">
             <strong
               class="d-sm-inline-block p-2 me-2 mb-2 mb-lg-0 rounded-2 text-bg-warning bg-opacity-50"
-              >New product</strong
+              >Electrical</strong
             >
             <span class="text-body-secondary"
-              >Lorem ipsum dolor sit amet consectetur.</span
+              >We have new products for your office lighting.</span
             ></a
           >
         </div>
-        <!-- <div class="col-md-6 col-lg-4 col-9 mb-4 mb-lg-5"> 
-          <div class="position-relative m-4">
-            <div
-              class="progress"
-              role="progressbar"
-              aria-label="Progress"
-              aria-valuenow="0"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style="height: 1px"
-            >
-              <div
-                class="progress-bar bg-secondary opacity-75"
-                style="width: 100%"
-              ></div>
-            </div>
-            <i
-              class="bi bi-folder-check fs-2 text-bg-dark px-3 py-2 border border-white border-5 rounded-circle position-absolute top-0 start-0 translate-middle"
-            ></i>
-            <i
-              class="bi bi-box-seam fs-2 text-bg-dark px-3 py-2 border border-white border-5 rounded-circle position-absolute top-0 start-50 translate-middle"
-            ></i>
-            <i
-              class="bi bi-truck fs-2 text-bg-dark px-3 py-2 border border-white border-5 rounded-circle position-absolute top-0 start-100 translate-middle"
-            ></i>
-          </div>
-        </div>-->
       </div>
       <div class="position-relative p-2 text-center">
-        <h1 class="display-4 fw-bold text-body-emphasis">
+        <h1 class="display-3 fw-bold text-body-emphasis">
           Office Supplies Solution.
         </h1>
         <p class="col-lg-6 mx-auto mb-4 lead p-2">
@@ -195,58 +178,47 @@
       </div>
     </div>
 
-    <!-- stamp -->
-
-    <!-- <div class="brands container text-center"> 
+    <div class="container text-center">
       <div
-        class="row row-cols-3 row-cols-lg-5 g-2 g-lg-3 justify-content-center">
-        <div class="col align-items-center">
-          <div class="p-lg-2 p-3">
+        class="row row-cols-2 row-cols-md-5 g-2 g-lg-0 justify-content-center align-items-center">
+        <div class="col">
+          <div class="p-3">
             <img
-              src="img/brands/uniball.png"
+              src="img/brands/Uni-ball.svg"
+              class="img-fluid"
+              width="135"
+              alt="" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3">
+            <img
+              src="img/brands/paperone.svg"
               class="img-fluid"
               width="125"
               alt="" />
           </div>
         </div>
-        <div class="col align-items-center">
-          <div class="p-lg-2 p-3">
+        <div class="col">
+          <div class="p-3">
             <img
-              src="img/brands/paperone.png"
+              src="img/brands/Posi-it.svg"
               class="img-fluid"
               width="125"
               alt="" />
           </div>
         </div>
-        <div class="col align-items-center">
-          <div class="p-lg-2 p-3">
+        <div class="col">
+          <div class="p-3">
             <img
-              src="img/brands/shiny.png"
+              src="img/brands/stabilo.svg"
               class="img-fluid"
-              width="125"
-              alt="" />
-          </div>
-        </div>
-        <div class="col align-items-center">
-          <div class="p-lg-2 p-3">
-            <img
-              src="img/brands/bantex.png"
-              class="img-fluid"
-              width="125"
-              alt="" />
-          </div>
-        </div>
-        <div class="col align-items-center">
-          <div class="p-lg-2 p-3">
-            <img
-              src="img/brands/stabilo.png"
-              class="img-fluid"
-              width="125"
+              width="135"
               alt="" />
           </div>
         </div>
       </div>
-    </div>-->
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
