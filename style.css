@@ -1,5 +1,14 @@
 .navbar-brand {
   padding: 16px 32px;
+  font-size: 19px;
+}
+
+.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.dropdown-item:focus {
+  background-color: #212529;
 }
 
 .vr {
