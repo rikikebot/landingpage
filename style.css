@@ -7,6 +7,10 @@
   align-self: center;
 }
 
+.dropdown-toggle {
+  box-shadow: none;
+}
+
 .dropdown-item:focus {
   background-color: #212529;
 }
