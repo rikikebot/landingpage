@@ -1,6 +1,7 @@
 .navbar-brand {
-  padding: 15px 30px;
+  padding: 16px 24px;
   font-size: 19px;
+  letter-spacing: 2px;
 }
 
 .dropdown-toggle:focus {
@@ -12,6 +13,6 @@
 }
 
 .vr {
-  height: 26px;
+  height: 27px;
   margin-top: 13px;
 }
