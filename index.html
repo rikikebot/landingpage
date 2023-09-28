@@ -16,7 +16,7 @@
   </head>
   <body class="font-monospace">
     <nav
-      class="navbar bg-body fixed-top pt-0 border-bottom"
+      class="navbar bg-body sticky-top pt-0 border-bottom"
       style="height: 54px">
       <div class="container">
         <a class="navbar-brand text-bg-dark" href="#">Tumitra</a>
@@ -33,7 +33,7 @@
               aria-expanded="false">
               Menu
             </a>
-            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+            <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">About Us</a></li>
               <li><a class="dropdown-item" href="#">Our Products</a></li>
               <li><hr class="dropdown-divider" /></li>
@@ -41,7 +41,7 @@
             </ul>
           </li>
         </ul>
-        <div class="vr mx-2 mx-lg-3"></div>
+        <div class="vr mx-2 mx-lg-3 align-self-center mb-2"></div>
         <nav class="nav mb-2">
           <a
             class="nav-link link-body-emphasis"
@@ -52,27 +52,37 @@
             ><i class="bi bi-bell-fill"></i
           ></a>
         </nav>
+        <button
+          class="navbar-toggler mb-2 border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <div class="contact-menu" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </button>
       </div>
     </nav>
 
-    <!-- icon-sidebar -->
-    <div class="icon-sidebar">
-      <a
-        class="btn btn-dark rounded-0 border-bottom-0 active"
-        aria-current="page"
-        href="#"
-        role="button"
-        ><i class="bi bi-telephone fs-5"></i
-      ></a>
-      <a class="btn btn-dark rounded-0 border-bottom-0" href="#" role="button"
-        ><i class="bi bi-envelope fs-5"></i
-      ></a>
-      <a class="btn btn-dark rounded-0 border-bottom-0" href="#" role="button"
-        ><i class="bi bi-geo-alt fs-5"></i
-      ></a>
+    <div class="collapse" id="navbarToggleExternalContent">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container">
+          <span class="navbar-text small mx-auto">
+            Fast respone please <a href="#">Default Link</a> with our team or
+            read the
+            <a href="#">FAQs</a>
+            page.
+          </span>
+        </div>
+      </nav>
     </div>
 
-    <!-- Modal -->
+    <!-- modal -->
     <div
       class="modal fade"
       id="exampleModal"
@@ -102,5 +112,10 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"></script>
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
   </body>
 </html>
