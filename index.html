@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Tumitra | General Supplier & Printing</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,72 +16,73 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="font-monospace">
-    <nav
-      class="navbar bg-body sticky-top pt-0 border-bottom"
-      style="height: 54px">
+    <nav class="navbar bg-body sticky-top pt-0">
       <div class="container">
-        <a class="navbar-brand text-bg-dark" href="#">Tumitra</a>
-        <span class="navbar-text ms-auto mb-2 d-none d-lg-block">
+        <a
+          class="navbar-brand text-bg-dark px-4"
+          href="#"
+          style="font-size: 18px"
+          >Tumitra</a
+        >
+        <span class="navbar-text d-none d-lg-block ms-auto">
           General Supplier & Printing
         </span>
         <ul class="nav ms-auto">
-          <li class="nav-item dropdown mb-2">
+          <li class="nav-item dropdown">
             <a
               class="nav-link link-body-emphasis dropdown-toggle"
               href="#"
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false">
-              Menu
+              Help
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">About Us</a></li>
-              <li><a class="dropdown-item" href="#">Our Products</a></li>
+              <li><a class="dropdown-item" href="#">Call Us</a></li>
+              <li><a class="dropdown-item" href="#">Send Email</a></li>
               <li><hr class="dropdown-divider" /></li>
               <li><a class="dropdown-item" href="#">FAQs</a></li>
             </ul>
           </li>
         </ul>
-        <div class="vr mx-2 mx-lg-3 align-self-center mb-2"></div>
-        <nav class="nav mb-2">
-          <a
-            class="nav-link link-body-emphasis"
-            href="#"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            title="Promotion"
-            ><i class="bi bi-bell-fill"></i
-          ></a>
-        </nav>
+        <div class="vr mx-2 mx-lg-3"></div>
+        <ul class="nav">
+          <li class="nav-item">
+            <a
+              class="nav-link link-body-emphasis"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              title="Promotion"
+              ><i class="bi bi-bell-fill"></i
+            ></a>
+          </li>
+        </ul>
         <button
-          class="navbar-toggler mb-2 border-0"
+          class="navbar-toggler border-0"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarToggleExternalContent"
-          aria-controls="navbarToggleExternalContent"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation">
-          <div class="contact-menu" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse py-3" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-
-    <div class="collapse" id="navbarToggleExternalContent">
-      <nav class="navbar bg-body-tertiary">
-        <div class="container">
-          <span class="navbar-text small mx-auto">
-            Fast respone please <a href="#">Default Link</a> with our team or
-            read the
-            <a href="#">FAQs</a>
-            page.
-          </span>
-        </div>
-      </nav>
-    </div>
 
     <!-- modal -->
     <div
@@ -112,10 +114,5 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"></script>
-    <script>
-      function myFunction(x) {
-        x.classList.toggle("change");
-      }
-    </script>
   </body>
 </html>
