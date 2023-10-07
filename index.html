@@ -121,8 +121,9 @@
               loading="lazy" />
           </div>
           <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-              Office Supplies Solution.
+            <h1 class="display-5 fw-bold text-body-emphasis mb-3">
+              Office Supplies<br />
+              <span id="element"></span>
             </h1>
             <p class="text-body-emphasis">
               We provide all your office equipment, and make everything better
@@ -183,13 +184,13 @@
               loading="lazy" />
           </div>
           <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-              About Us.
-            </h1>
-            <p class="text-body-emphasis">
-              Quickly design and customize responsive mobile-first sites with
-              Bootstrap, the world’s most popular front-end open source toolkit.
+            <h1 class="display-5 fw-bold text-body-emphasis mb-3">About Us.</h1>
+            <p class="text-body-emphasis mb-5">
+              CV. Tumitra Prima Sarana is a general supplier and printing
+              company for office needs. Established in 2022, we are committed to
+              being the best partner to serve our customers.
             </p>
+            <img src="img/verified.png" class="float-end" alt="" />
           </div>
         </div>
       </div>
@@ -219,7 +220,6 @@
                   Paragraph of text beneath the heading to explain the heading.
                 </p>
               </div>
-
               <div class="col d-flex flex-column gap-2">
                 <div
                   class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-dark fs-4 rounded-1">
@@ -230,7 +230,6 @@
                   Paragraph of text beneath the heading to explain the heading.
                 </p>
               </div>
-
               <div class="col d-flex flex-column gap-2">
                 <div
                   class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-dark fs-4 rounded-1">
@@ -241,7 +240,6 @@
                   Paragraph of text beneath the heading to explain the heading.
                 </p>
               </div>
-
               <div class="col d-flex flex-column gap-2">
                 <div
                   class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-dark fs-4 rounded-1">
@@ -262,5 +260,20 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Solution."],
+        typeSpeed: 300,
+        backSpeed: 70,
+        fadeOut: false,
+        loop: true,
+      });
+    </script>
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
   </body>
 </html>
