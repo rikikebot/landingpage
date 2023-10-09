@@ -29,6 +29,12 @@
       width: 3rem;
       height: 3rem;
     }
+    .accordion-button:not(.collapsed) {
+      background-color: #fff;
+    }
+    .accordion-button:focus {
+      box-shadow: none;
+    }
   </style>
 
   <body class="font-monospace">
@@ -110,7 +116,7 @@
 
     <!-- hero -->
 
-    <div class="container px-4 py-5">
+    <div class="container px-4 pt-4">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-lg-6">
           <img
@@ -130,16 +136,17 @@
             We provide all your office equipment, and make everything better
             with our products. Order now!.
           </p>
-          <button
-            type="button"
-            class="btn btn-dark btn-lg px-4 rounded-1"
+          <a
+            href="#contact"
+            role="button"
+            class="btn btn-dark btn-lg px-4 rounded-1 mb-3"
             style="font-size: 17px">
             Contact Us
-          </button>
+          </a>
         </div>
       </div>
     </div>
-    <div class="container py-5">
+    <div class="container">
       <div
         class="row align-items-center justify-content-center mb-md-0 text-center">
         <div class="col-md-3 col-6 mb-5 mb-md-0 border-end">
@@ -158,11 +165,11 @@
           <h6>Delivery</h6>
           <p><small class="text-muted">Free! Local only</small></p>
         </div>
-        <div class="col-md-3 col-6 mb-5 mb-md-0 border-end">
+        <div class="col-md-3 col-6 mb-0 mb-md-0 border-end">
           <h6>Our Guarantee</h6>
           <p><small class="text-muted">100% money back</small></p>
         </div>
-        <div class="col-md-3 col-6 mb-5 mb-md-0">
+        <div class="col-md-3 col-6 mb-0 mb-md-0">
           <h6>Free Support</h6>
           <p>
             <small class="text-muted">24/7 Service</small>
@@ -173,7 +180,7 @@
 
     <!-- about -->
 
-    <div class="container px-4 pb-5" id="about">
+    <div class="container px-4" id="about">
       <div class="row align-items-center g-5 py-5">
         <div class="col-lg-6">
           <img
@@ -198,7 +205,7 @@
 
     <!-- products -->
 
-    <div class="container px-4 pb-5" id="products">
+    <div class="container px-4" id="products">
       <div class="row flex-row-reverse align-items-center g-5 py-5">
         <div class="col-lg-6">
           <img
@@ -253,6 +260,180 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- faq -->
+    <div class="container px-4" id="faqs">
+      <div class="row align-items-center g-5 py-5">
+        <div class="col-lg-6">
+          <img
+            src="img/faq-img.png"
+            class="d-block mx-lg-auto img-fluid"
+            alt="Tumitra"
+            width="700"
+            height="500"
+            loading="lazy" />
+        </div>
+        <div class="col-lg-6">
+          <div class="accordion text-start" id="accordionExample">
+            <div class="accordion-item border-0 border-bottom rounded-0">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button text-dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Bagaimana cara memesan produk?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <strong class="text-dark">Sangat mudah!</strong> Anda bisa
+                  langsung menghubungi kami dengan mengirimkan email dan
+                  chatting melalui aplikasi whatsapp. Atau anda juga bisa datang
+                  langsung ke alamat kantor.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-0 border-bottom rounded-0">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed text-dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  Metode pembayaran apa yang Anda terima?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  Saat ini Tumitra hanya menerima dua jenis pembayaran :
+                  <ul>
+                    <li>Pembayaran Tunai dan</li>
+                    <li>Tranfer Bank</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-0 border-bottom rounded-0">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed text-dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree">
+                  Kapan waktu pengiriman?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <strong class="text-dark">Secepatnya!</strong><br />Kami akan
+                  segera memproses pesanan dan pengiriman barang Anda di hari
+                  yang sama jika tidak ada kendala dalam proses transaksi.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-0 border-bottom rounded-0">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed text-dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour">
+                  Apakah barang yang rusak dapat dikembalikan?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body text-muted">
+                  <strong class="text-dark">BISA!</strong><br />Tumitra
+                  bertanggung jawab atas kerusakan barang. Silahkan hubungi kami
+                  untuk proses pengembalian.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- quote -->
+    <div class="px-4 pb-5 text-center">
+      <div class="col-lg-6 mx-auto">
+        <h4 class="fw-normal" data-aos="zoom-in">
+          “Tumitra is better than any other suppliers. we are very satisfied
+          with their service.”
+        </h4>
+        <blockquote class="blockquote text-muted mb-md-4">
+          <p></p>
+          <footer class="blockquote-footer">
+            Kenzie Anaki
+            <cite title=""> - Owner of Kenzhop Clothing</cite>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div class="container px-4 py-3 border-top" id="contact">
+      <div class="row g-5">
+        <div class="col-lg-6 mb-3">
+          <h5>Office address</h5>
+          <p>
+            Baloi Indah, Jl. Gn. Merbabu No.03<br class="d-lg-none" />
+            Kota Batam - 29443 <br />Senin - Sabtu ( 08 - 17 PM )
+          </p>
+        </div>
+
+        <div class="col-lg-6 mb-3">
+          <div>
+            <h5>Contact Us</h5>
+            <p>Paragraph of text beneath the heading.</p>
+            <div class="hstack gap-3">
+              <a class="btn btn-dark px-4 rounded-1" href="#" role="button"
+                >WhatsApp</a
+              >
+              <div class="vr mx-2"></div>
+              <a
+                class="btn btn-outline-dark px-4 rounded-1"
+                href="#"
+                role="button"
+                >Send Email</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container px-4 border-top">
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-3">
+        <p>&copy; 2023 Tumitra, Cv. All rights reserved.</p>
       </div>
     </div>
 
