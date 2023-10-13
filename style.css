@@ -1,0 +1,14 @@
+.accordion-button:not(.collapsed) {
+  background-color: #fff;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(img/minus.png);
+  background-size: 16px;
+}
+.accordion-button::after {
+  background-image: url(img/plus.png);
+  background-size: 16px;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
