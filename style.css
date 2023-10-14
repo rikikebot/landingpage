@@ -1,5 +1,5 @@
 .accordion-button:not(.collapsed) {
-  background-color: #fff;
+  background-color: #e9ecef;
 }
 .accordion-button:not(.collapsed)::after {
   background-image: url(img/minus.png);
