@@ -9,10 +9,12 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous" />
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
 
     <style>
       .accordion-button:not(.collapsed) {
@@ -26,7 +28,20 @@
   </head>
   <body>
     <div class="container text-center">
-      <div class="col-lg-9 mx-auto">
+      <div class="col-lg-8 mx-auto">
+        <div
+          class="collapse"
+          id="navbarToggleExternalContent"
+          data-bs-theme="dark"
+        >
+          <div class="p-4 text-start">
+            <h5 class="text-body-emphasis">About The Company</h5>
+            <span class="text-body-secondary"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+              reprehenderit.</span
+            >
+          </div>
+        </div>
         <div class="hstack gap-3 px-4 py-3">
           <div class="p-2 ms-auto text-body-emphasis">
             Office Supplies Solution
@@ -48,9 +63,27 @@
       <header class="d-flex justify-content-center align-items-center py-4">
         <div class="d-flex flex-lg-row flex-column">
           <div class="p-2 flex-fill mx-auto">
-            <a href="#" class="d-flex p-3 rounded-circle border"
-              ><img src="img/logo_white.png" width="68" alt="tumitra-logo" />
+            <a href="#" class="d-flex p-3 img-thumbnail rounded-circle"
+              ><img
+                src="img/logo_white.png"
+                width="68"
+                alt="tumitra-logo"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent"
+                aria-controls="navbarToggleExternalContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              />
             </a>
+            <div class="position-relative">
+              <div
+                class="position-absolute bottom-0 start-100 translate-middle-x mb-2 pe-4"
+              >
+                <i
+                  class="bi bi-person-fill img-thumbnail rounded-circle p-2"
+                ></i>
+              </div>
+            </div>
           </div>
           <div class="p-2 flex-fill text-lg-start ms-lg-3 align-self-center">
             <h4 class="fw-semibold mb-0 text-body-emphasis">
@@ -58,8 +91,7 @@
             </h4>
             <p class="text-secondary mb-2">General Supplier & Printing</p>
             <a class="link-body-emphasis text-decoration-none" href="#">
-              <i class="bi bi-geo-alt-fill"></i>
-              Office Address
+              <i class="bi bi-geo-alt-fill me-2"></i>Office Address
             </a>
           </div>
         </div>
@@ -71,7 +103,8 @@
       id="exampleModal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
@@ -82,7 +115,8 @@
               type="button"
               class="btn-close"
               data-bs-dismiss="modal"
-              aria-label="Close"></button>
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body">
             <img src="..." class="img-fluid" alt="" />
@@ -116,9 +150,7 @@
         <a href="#" class="btn btn-outline-light me-1 rounded-1"
           ><i class="bi bi-whatsapp"></i
         ></a>
-        <a
-          href="#"
-          class="btn btn-outline-light ms-1 rounded-1"
+        <a href="#" class="btn btn-outline-light ms-1 rounded-1"
           ><i class="bi bi-envelope-paper"></i
         ></a>
       </div>
@@ -134,7 +166,8 @@
               type="button"
               role="tab"
               aria-controls="product-tab-pane"
-              aria-selected="true">
+              aria-selected="true"
+            >
               Products
             </button>
           </li>
@@ -147,7 +180,8 @@
               type="button"
               role="tab"
               aria-controls="faq-tab-pane"
-              aria-selected="false">
+              aria-selected="false"
+            >
               FAQs
             </button>
           </li>
@@ -160,7 +194,8 @@
               type="button"
               role="tab"
               aria-controls="contact-tab-pane"
-              aria-selected="false">
+              aria-selected="false"
+            >
               Contact
             </button>
           </li>
@@ -172,11 +207,16 @@
             id="product-tab-pane"
             role="tabpanel"
             aria-labelledby="product-tab"
-            tabindex="0">
+            tabindex="0"
+          >
             <div class="row row-cols-1 row-cols-md-2 g-4">
               <div class="col">
                 <div class="card">
-                  <img src="img/IMG_1057.jpg" class="card-img-top img-fluid" alt="..." />
+                  <img
+                    src="img/IMG_1057.jpg"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
                   <div class="card-body text-start">
                     <h5 class="card-title text-body-emphasis">Stationery</h5>
                     <p class="card-text text-secondary">
@@ -188,7 +228,11 @@
               </div>
               <div class="col">
                 <div class="card">
-                  <img src="img/IMG_1058.jpg" class="card-img-top img-fluid" alt="..." />
+                  <img
+                    src="img/IMG_1058.jpg"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
                   <div class="card-body text-start">
                     <h5 class="card-title text-body-emphasis">Printing</h5>
                     <p class="card-text text-secondary">
@@ -200,7 +244,11 @@
               </div>
               <div class="col">
                 <div class="card">
-                  <img src="img/IMG_1057.jpg" class="card-img-top img-fluid" alt="..." />
+                  <img
+                    src="img/IMG_1057.jpg"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
                   <div class="card-body text-start">
                     <h5 class="card-title text-body-emphasis">Houseware</h5>
                     <p class="card-text text-secondary">
@@ -212,11 +260,15 @@
               </div>
               <div class="col">
                 <div class="card">
-                  <img src="img/IMG_1058.jpg" class="card-img-top img-fluid" alt="..." />
+                  <img
+                    src="img/IMG_1058.jpg"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
                   <div class="card-body text-start">
                     <h5 class="card-title text-body-emphasis">
                       Electrical<span
-                        class="badge text-bg-warning rounded-1 ms-2"
+                        class="badge text-bg-primary bg-opacity-50 rounded-1 ms-2"
                         >New</span
                       >
                     </h5>
@@ -234,7 +286,8 @@
             id="faq-tab-pane"
             role="tabpanel"
             aria-labelledby="faq-tab"
-            tabindex="0">
+            tabindex="0"
+          >
             <div class="accordion text-start" id="accordionExample">
               <div class="accordion-item border-0 border-bottom rounded-0">
                 <h2 class="accordion-header" id="headingOne">
@@ -244,7 +297,8 @@
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseOne"
                     aria-expanded="true"
-                    aria-controls="collapseOne">
+                    aria-controls="collapseOne"
+                  >
                     Bagaimana cara memesan produk?
                   </button>
                 </h2>
@@ -252,7 +306,8 @@
                   id="collapseOne"
                   class="accordion-collapse collapse show"
                   aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample">
+                  data-bs-parent="#accordionExample"
+                >
                   <div class="accordion-body text-muted">
                     <strong class="text-body-emphasis">Sangat mudah!</strong>
                     Anda bisa langsung menghubungi kami dengan mengirimkan email
@@ -269,7 +324,8 @@
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseTwo"
                     aria-expanded="false"
-                    aria-controls="collapseTwo">
+                    aria-controls="collapseTwo"
+                  >
                     Metode pembayaran apa yang Anda terima?
                   </button>
                 </h2>
@@ -277,7 +333,8 @@
                   id="collapseTwo"
                   class="accordion-collapse collapse"
                   aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample">
+                  data-bs-parent="#accordionExample"
+                >
                   <div class="accordion-body text-muted">
                     Saat ini Tumitra hanya menerima dua jenis pembayaran :
                     <ul>
@@ -295,7 +352,8 @@
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseThree"
                     aria-expanded="false"
-                    aria-controls="collapseThree">
+                    aria-controls="collapseThree"
+                  >
                     Kapan waktu pengiriman?
                   </button>
                 </h2>
@@ -303,7 +361,8 @@
                   id="collapseThree"
                   class="accordion-collapse collapse"
                   aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample">
+                  data-bs-parent="#accordionExample"
+                >
                   <div class="accordion-body text-muted">
                     <strong class="text-body-emphasis">Secepatnya!</strong
                     ><br />Kami akan segera memproses pesanan dan pengiriman
@@ -320,7 +379,8 @@
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseFour"
                     aria-expanded="false"
-                    aria-controls="collapseFour">
+                    aria-controls="collapseFour"
+                  >
                     Apakah barang yang rusak dapat dikembalikan?
                   </button>
                 </h2>
@@ -328,7 +388,8 @@
                   id="collapseFour"
                   class="accordion-collapse collapse"
                   aria-labelledby="headingFour"
-                  data-bs-parent="#accordionExample">
+                  data-bs-parent="#accordionExample"
+                >
                   <div class="accordion-body text-muted">
                     <strong class="text-body-emphasis">BISA!</strong
                     ><br />Tumitra bertanggung jawab atas kerusakan barang.
@@ -343,7 +404,8 @@
             id="contact-tab-pane"
             role="tabpanel"
             aria-labelledby="contact-tab"
-            tabindex="0">
+            tabindex="0"
+          >
             <dl class="row text-start">
               <dt class="col-sm-3">Company Name</dt>
               <dd class="col-sm-9">CV. Tumitra Prima Sarana</dd>
@@ -351,17 +413,17 @@
               <dt class="col-sm-3">Description</dt>
               <dd class="col-sm-9">
                 <p>General Supplier and Printing</p>
-                <ul class="list-inline text-info">
+                <ul class="list-inline">
                   <li class="list-inline-item">
-                    <i class="bi bi-dot"></i>Stationery
+                    <i class="bi bi-dot align-middle"></i>Stationery
                   </li>
 
                   <li class="list-inline-item">
-                    <i class="bi bi-dot"></i>Printing
+                    <i class="bi bi-dot align-middle"></i>Printing
                   </li>
 
                   <li class="list-inline-item">
-                    <i class="bi bi-dot"></i>Houseware
+                    <i class="bi bi-dot align-middle"></i>Houseware
                   </li>
                 </ul>
               </dd>
@@ -399,6 +461,7 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
